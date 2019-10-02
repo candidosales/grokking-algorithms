@@ -74,3 +74,12 @@ errata: <http://adit.io/errata.html>
 * Stacks are LIFO (Last In, First Out).
 * You need to check people in the order they were added to the search list, so the search list needs to be a queue. Otherwise, you won’t get the shortest path.
 * Once you check someone, make sure you don’t check them again. Otherwise, you might end up in an infinite loop.
+
+# Chapter 7
+
+* A graph with weights is called a weighted graph. A graph without weights is called an unweighted graph.
+* To calculate the shortest path in an unweighted graph, use breadth-first search. To calculate the shortest path in a weighted graph, use Dijkstra’s algorithm. Graphs can also have cycles. A cycle looks like this.
+* Dijkstra’s algorithm only works with directed acyclic graphs, called DAGs for short.
+* I hope this example showed you that the shortest path doesn’t have to be about physical distance. It can be *about minimizing something*. In this case, Rama wanted to minimize the amount of money he spent. Thanks, Dijkstra!
+* You can’t use Dijkstra’s algorithm if you have negative-weight edges.
+* If you want to find the shortest path in a graph that has negative-weight edges, there’s an algorithm for that! It’s called the Bellman-Ford algorithm.
