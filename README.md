@@ -77,9 +77,23 @@ errata: <http://adit.io/errata.html>
 
 # Chapter 7
 
+## Dijkstra's algorithm
+
 * A graph with weights is called a weighted graph. A graph without weights is called an unweighted graph.
 * To calculate the shortest path in an unweighted graph, use breadth-first search. To calculate the shortest path in a weighted graph, use Dijkstra’s algorithm. Graphs can also have cycles. A cycle looks like this.
 * Dijkstra’s algorithm only works with directed acyclic graphs, called DAGs for short.
 * I hope this example showed you that the shortest path doesn’t have to be about physical distance. It can be *about minimizing something*. In this case, Rama wanted to minimize the amount of money he spent. Thanks, Dijkstra!
 * You can’t use Dijkstra’s algorithm if you have negative-weight edges.
 * If you want to find the shortest path in a graph that has negative-weight edges, there’s an algorithm for that! It’s called the Bellman-Ford algorithm.
+
+# Chapter 8
+
+## Greedy algorithms
+
+* Usually there’s a very small difference between a problem that’s easy to solve and an NP-complete problem. For example, in the previous chapters, I talked a lot about shortest paths. You know how to calculate the shortest way to get from point A to point B.
+* But if you want to find the shortest path that connects several points, that’s the traveling-salesperson problem, which is NP-complete. The short answer: there’s no easy way to tell if the problem you’re working on is NP-complete. Here are some giveaways:
+* Your algorithm runs quickly with a handful of items but really slows down with more items.
+* All combinations of X” usually point to an NP-complete problem.
+* Do you have to calculate “every possible version” of X because you can’t break it down into smaller sub-problems? Might be NP-complete.
+* If your problem involves a sequence (such as a sequence of cities, like traveling salesperson), and it’s hard to solve, it might be NP-complete.
+* If your problem involves a set (like a set of radio stations) and it’s hard to solve, it might be NP-complete.
