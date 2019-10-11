@@ -97,3 +97,14 @@ errata: <http://adit.io/errata.html>
 * Do you have to calculate “every possible version” of X because you can’t break it down into smaller sub-problems? Might be NP-complete.
 * If your problem involves a sequence (such as a sequence of cities, like traveling salesperson), and it’s hard to solve, it might be NP-complete.
 * If your problem involves a set (like a set of radio stations) and it’s hard to solve, it might be NP-complete.
+
+# Chapter 9
+
+## Dynamic programming
+
+* Dynamic programming is useful when you’re trying to optimize something given a constraint. In the knapsack problem, you had to maximize the value of the goods you stole, constrained by the size of the knapsack.
+* You can use dynamic programming when the problem can be broken into discrete subproblems, and they don’t depend on each other.
+* Biologists use the longest common subsequence to find similarities in DNA strands. They can use this to tell how similar two animals or two diseases are. The longest common subsequence is being used to find a cure for multiple sclerosis.
+* Have you ever used diff (like git diff)? Diff tells you the differences between two files, and it uses dynamic programming to do so.
+* We talked about string similarity. Levenshtein distance measures how similar two strings are, and it uses dynamic programming. Levenshtein distance is used for everything from spell-check to figuring out whether a user is uploading copyrighted data.
+* Have you ever used an app that does word wrap, like Microsoft Word? How does it figure out where to wrap so that the line length stays consistent? Dynamic programming!
