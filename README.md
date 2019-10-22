@@ -108,3 +108,13 @@ errata: <http://adit.io/errata.html>
 * Have you ever used diff (like git diff)? Diff tells you the differences between two files, and it uses dynamic programming to do so.
 * We talked about string similarity. Levenshtein distance measures how similar two strings are, and it uses dynamic programming. Levenshtein distance is used for everything from spell-check to figuring out whether a user is uploading copyrighted data.
 * Have you ever used an app that does word wrap, like Microsoft Word? How does it figure out where to wrap so that the line length stays consistent? Dynamic programming!
+
+# Chapter 10
+
+## K-nearest neighbors
+
+* KNN is used for classification and regression and involves looking at the k-nearest neighbors.
+* Classification = categorization into a group.
+* Regression = predicting a response (like a number).
+* Feature extraction means converting an item (like a fruit or a user) into a list of numbers that can be compared.
+* Picking good features is an important part of a successful KNN algorithm.
